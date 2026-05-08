@@ -11,7 +11,19 @@ export default function InicioScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#eff6ff', alignItems: 'center', justifyContent: 'center', padding: 24 },
-  titulo: { fontSize: 32, fontWeight: 'bold', color: '#1e3a8a', marginBottom: 12 },
-  descripcion: { fontSize: 16, color: '#4b5563', textAlign: 'center' },
+  container: {
+    flex: 1,
+    backgroundColor: '#eff6ff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  titulo: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#1e3a8a',
+  },
+  descripcion: {
+    fontSize: 16,
+    color: '#4b5563',
+  },
 });
