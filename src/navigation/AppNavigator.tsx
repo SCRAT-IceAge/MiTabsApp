@@ -1,9 +1,3 @@
-/*
-_________________________________________
-
-_________________________________________
-*/
-
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
@@ -37,7 +31,11 @@ export default function AppNavigator() {
       })}
     >
       <Tab.Screen name="Inicio" component={InicioScreen} />
-      <Tab.Screen name="Buscar" component={BuscarScreen} />
+      <Tab.Screen 
+        name="Buscar" 
+        component={BuscarScreen}
+        options={{ tabBarBadge: 5 }}
+      />
       <Tab.Screen name="Perfil" component={PerfilScreen} />
     </Tab.Navigator>
   );
