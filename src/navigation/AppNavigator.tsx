@@ -17,26 +17,32 @@ export default function AppNavigator() {
         tabBarActiveTintColor: '#2563eb',
         tabBarInactiveTintColor: '#6b7280',
         tabBarIcon: ({ focused, color, size }) => {
-          let iconName: keyof typeof Ionicons.glyphMap;
+          let iconName: string;
 
           switch (route.name) {
-            case 'Inicio': iconName = 'home-outline'; break;
-            case 'Buscar': iconName = 'search-outline'; break;
-            case 'Perfil': iconName = 'person-outline'; break;
+            case 'Inicio': iconName = focused ? 'home' : 'home-outline'; break;
+            case 'Buscar': iconName = focused ? 'search' : 'search-outline'; break;
+            case 'Perfil': iconName = focused ? 'person' : 'person-outline'; break;
             default: iconName = 'help';
           }
 
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <Ionicons name={iconName as any} size={size} color={color} />;
         },
       })}
     >
       <Tab.Screen name="Inicio" component={InicioScreen} />
-      <Tab.Screen 
-        name="Buscar" 
+      <Tab.Screen
+        name="Buscar"
         component={BuscarScreen}
         options={{ tabBarBadge: 5 }}
       />
-      <Tab.Screen name="Perfil" component={PerfilScreen} />
+      <Tab.Screen
+        name="Perfil"
+        component={PerfilScreen}
+        options={{
+          tabBarLabel: 'Mi cuenta',
+        }}
+      />
     </Tab.Navigator>
   );
 }
