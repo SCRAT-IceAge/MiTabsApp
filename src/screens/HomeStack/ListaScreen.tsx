@@ -18,7 +18,7 @@ const items = [
 export default function ListaScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Personajes de The Office</Text>
+      <Text style={styles.titulo}>La Lista....</Text>
       {items.map((item) => (
         <TouchableOpacity
           key={item.id}
@@ -52,8 +52,8 @@ export default function ListaScreen({ navigation }: Props) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#eff6ff', padding: 24, paddingTop: 60 },
-  titulo: { fontSize: 32, fontWeight: 'bold', color: '#1e3a8a', marginBottom: 24 },
+  titulo: { fontSize: 50, fontWeight: 'bold', color: '#1e3a8a', marginBottom: 24 },
   item: { backgroundColor: '#fff', padding: 16, borderRadius: 12, marginBottom: 12, flexDirection: 'row'  },
-  itemTexto: { fontSize: 45, color: '#1e3a8a', paddingLeft:20 },
-  imagen: { width: 70, height: 70, borderRadius: 4 },
+  itemTexto: { fontSize: 70, color: '#1e3a8a', paddingLeft:20 },
+  imagen: { width: 100, height: 100, borderRadius: 4 },
 });
