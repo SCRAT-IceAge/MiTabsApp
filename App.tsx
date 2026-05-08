@@ -1,6 +1,6 @@
 import React from 'react';
-import InicioScreen from './src/screens/InicioScreen';
+import BuscarScreen from './src/screens/BuscarScreen';
 
 export default function App() {
-  return <InicioScreen />;
+  return <BuscarScreen />;
 }

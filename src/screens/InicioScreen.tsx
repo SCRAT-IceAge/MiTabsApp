@@ -5,7 +5,7 @@ export default function InicioScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}>Inicio</Text>
-      <Text style={styles.descripcion}>Acá vas a ver el contenido principal.</Text>
+      <Text style={styles.descripcion}>Hola Profe!!</Text>
     </View>
   );
 }
