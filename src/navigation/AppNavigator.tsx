@@ -1,4 +1,4 @@
-/* Actualiz navegador principal: Ahora pestaa inicio no apunta a inicioScreen, sino a HomeStackNavigator */
+/* Actualiz navegador principal: Ahora pantlla inicio no apunta a inicioScreen, sino a HomeStackNavigator */
 
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
