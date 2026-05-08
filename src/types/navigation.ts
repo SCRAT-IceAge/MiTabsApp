@@ -9,7 +9,8 @@ export type RootTabParamList = {
   Buscar: undefined;
   Perfil: undefined;
 };
-//
+
+// Stack interno 
 export type HomeStackParamList = {
   Lista: undefined;
   Detalle: { id: number };
