@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   back: { marginBottom: 24 },
   backTexto: { fontSize: 16, color: '#2563eb' },
   imagenContainer: { alignItems: 'center', marginBottom: 20 },
-  imagen: { width: 400, height: 400, borderRadius: 200 },
+  imagen: { width: 300, height: 300, borderRadius: 100 },
   titulo: { fontSize: 40, fontWeight: 'bold', color: '#1e3a8a', marginBottom: 12, textAlign: 'center' },
   descripcion: { fontSize: 30, color: '#374151', textAlign: 'center' },
 });
